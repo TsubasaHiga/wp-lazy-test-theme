@@ -24,19 +24,19 @@ Ver 6.3.5 までは`get_header()`の有無で挙動は変わらないようで�
 
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<?php wp_head(); ?>
-	</head>
+  <head>
+    <?php wp_head(); ?>
+  </head>
 
-	<body>
-		<main>
-			<?php
-			get_header(); // NOTE: ここの有無でlazy属性が付与されたり・されなかったりする
-			the_content();
-			?>
-		</main>
-		<?php wp_footer(); ?>
-	</body>
+  <body>
+    <main>
+      <?php
+      get_header(); // NOTE: ここの有無でlazy属性が付与されたり・されなかったりする
+      the_content();
+      ?>
+    </main>
+    <?php wp_footer(); ?>
+  </body>
 </html>
 ```
 
@@ -46,20 +46,24 @@ Ver 6.3.5 までは`get_header()`の有無で挙動は変わらないようで�
 
 ### Ver 6.3.5
 
-`get_header()`あり（lazy 属性あり）
-<https://sweet-router.localsite.io/hello-world>
-amusement / loving
+#### `get_header()`あり（lazy 属性あり）
 
-`get_header()`なし（lazy 属性あり）
-<https://innate-sunrise.localsite.io/hello-world>
-recipe / flashy
+- <https://sweet-router.localsite.io/hello-world>
+- `amusement` / `loving`
+
+#### `get_header()`なし（lazy 属性あり）
+
+- <https://innate-sunrise.localsite.io/hello-world>
+- `recipe` / `flashy`
 
 ### Ver 6.4.0（以降すべて同様の挙動のようです）
 
-`get_header()`あり（lazy 属性なし）
-<https://cuddly-spiral.localsite.io/hello-world>
-parachute / general
+#### `get_header()`あり（lazy 属性なし）
 
-`get_header()`なし（lazy 属性あり）
-<https://panicky-mine.localsite.io/hello-world>
-jewelry / noiseless
+- <https://cuddly-spiral.localsite.io/hello-world>
+- `parachute` / `general`
+
+#### `get_header()`なし（lazy 属性あり）
+
+- <https://panicky-mine.localsite.io/hello-world>
+- `jewelry` / `noiseless`
