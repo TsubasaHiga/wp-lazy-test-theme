@@ -15,7 +15,7 @@
 	<body>
 		<main>
 			<?php
-			get_header(); // NOTE: ここの有無でlazy属性が付与されたり・されなかったりする
+			get_header(); // NOTE: ここの有無でloading属性が付与されたり・されなかったりする
 			the_content();
 			?>
 		</main>

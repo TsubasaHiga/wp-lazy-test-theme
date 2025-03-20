@@ -1,6 +1,6 @@
 WordPress のテーマにて、`get_header()`の有無で`the_content()`より出力される img タグに`loading="lazy"`が付与されたり・されなかったりする挙動が見られるようですが、これは仕様でしょうか？
 
-Ver 6.3.5 までは`get_header()`の有無で挙動は変わらないようですが、Ver 6.4 系以降`get_header()`があると lazy 属性付与されないようでした。
+Ver 6.3.5 までは`get_header()`の有無で挙動は変わらないようですが、Ver 6.4 系以降`get_header()`があると loading 属性付与されないようでした。
 仕様でしたらこの辺りのドキュメントを探しておりますので、ご存知の方がいらっしゃいましたら教えていただけますと幸いです。
 
 以下は挙動確認をまとめた表です。
@@ -31,7 +31,7 @@ Ver 6.3.5 までは`get_header()`の有無で挙動は変わらないようで�
   <body>
     <main>
       <?php
-      get_header(); // NOTE: ここの有無でlazy属性が付与されたり・されなかったりする
+      get_header(); // NOTE: ここの有無でloading属性が付与されたり・されなかったりする
       the_content();
       ?>
     </main>
@@ -46,24 +46,24 @@ Ver 6.3.5 までは`get_header()`の有無で挙動は変わらないようで�
 
 ### Ver 6.3.5
 
-#### `get_header()`あり（lazy 属性あり）
+#### `get_header()`あり（loading 属性あり）
 
 - <https://sweet-router.localsite.io/hello-world>
 - `amusement` / `loving`
 
-#### `get_header()`なし（lazy 属性あり）
+#### `get_header()`なし（loading 属性あり）
 
 - <https://innate-sunrise.localsite.io/hello-world>
 - `recipe` / `flashy`
 
 ### Ver 6.4.0（以降すべて同様の挙動のようです）
 
-#### `get_header()`あり（lazy 属性なし）
+#### `get_header()`あり（loading 属性なし）
 
 - <https://cuddly-spiral.localsite.io/hello-world>
 - `parachute` / `general`
 
-#### `get_header()`なし（lazy 属性あり）
+#### `get_header()`なし（loading 属性あり）
 
 - <https://panicky-mine.localsite.io/hello-world>
 - `jewelry` / `noiseless`
