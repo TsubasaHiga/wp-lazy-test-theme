@@ -1,6 +1,5 @@
 > [!NOTE]
-> 本件は以下記事にて調査・まとめを行いました。
-> <https://cofus.blog/posts/wordpress-6-4-get-header-prevents-lazy-loading>
+> 本件は[こちら](https://cofus.blog/posts/wordpress-6-4-get-header-prevents-lazy-loading)の記事にて調査・まとめを行いました。
 
 ---
 
