@@ -1,3 +1,9 @@
+> [!NOTE]
+> 本件は以下記事にて調査・まとめを行いました。
+> <https://cofus.blog/posts/wordpress-6-4-get-header-prevents-lazy-loading>
+
+---
+
 WordPress のテーマにて、`get_header()`の有無で`the_content()`より出力される img タグに`loading="lazy"`が付与されたり・されなかったりする挙動が見られるようですが、これは仕様でしょうか？
 
 Ver 6.3.5 までは`get_header()`の有無で挙動は変わらないようですが、Ver 6.4 系以降`get_header()`があると loading 属性付与されないようでした。
